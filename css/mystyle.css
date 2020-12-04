@@ -1,0 +1,1395 @@
+	*{
+		margin: 0;
+		padding: 0;
+	}
+	html,body{
+		width: 100%;
+		height: 100%;
+	}
+	ul li{
+		list-style: none;
+	}
+	.black_bg{
+		/*border:1px solid blue;*/
+		width: 100%;
+		height: 100%;
+		background-color: #000000;
+		position:relative;
+		opacity: 0.8;
+		z-index:999
+	}
+	.fa{
+		cursor: pointer;
+	}
+	#wrapper{
+		width: 500%;
+		height: 100%;	
+	}
+	#wrapper>section{
+		/*border:1px solid plum;	*/
+		width: 20%;
+		height: 100%;
+		position: relative;
+		float: left;
+		box-sizing: border-box;
+		
+	}
+	#lnb a, #gnb a{
+		text-indent: -9999px;
+		display: block;
+		height: 100%;
+	}
+	#home #lnb{
+		width: 900px;
+		height:141px;
+		position: absolute;
+		left: 50%;
+		top:2%;
+		margin-left: -450px;
+		overflow:hidden;
+	}
+	#home #lnb .stick{
+		background: url(../img/nav/lnb/lnb.png) no-repeat;
+		background-size: contain;
+		width: 900px;
+		height: 141px;
+	}
+	#home #lnb .stick li{
+		width: 170px;
+		height: 59px;
+		position: relative;
+		display: block;
+		float: left;
+		left:130px;
+		top:45px;
+		margin-left: 20px;
+	}
+	#home #lnb .stick li:nth-child:hover{
+		width: 170px;
+		height: 59px;
+		position: relative;
+		float: left;
+		left:130px;
+		top:45px;
+		margin-left: 20px;
+		transition: 1s;
+	}
+	#home #gnb{
+		/*border: 1px solid yellow;*/
+		position: fixed;
+		width: 111px;
+		height: 705px;
+		bottom:9%;
+		left:2%;
+		overflow: hidden;
+		z-index: 99;
+	}
+	#home #gnb li{
+	/*	border: 1px solid blue;*/
+		width: 110px;
+		height:141px;
+		position: relative;
+		box-sizing: border-box;
+	}
+	#home #sns li a{
+		text-indent: -9999px;
+		display: block;
+		width: 51px;
+		height: 51px;
+	}
+	/*------------------------------------------------------------------------*/
+	/*home 배경&컨텐츠*/
+
+	/*배경이미지*/
+	#wrapper>section:nth-of-type(1){
+		background: url(../img/bg/bg_01.png) center ;
+		background-size: cover;
+	}
+	#wrapper>section:nth-of-type(2){
+		background: url(../img/bg/bg_02.png) center no-repeat;
+		background-size: cover;
+	}
+	#wrapper>section:nth-of-type(3){
+		background: url(../img/bg/bg_03.png) center no-repeat;
+		background-size: cover;
+	}
+	#wrapper>section:nth-of-type(4){
+		background: url(../img/bg/bg_04.png) center;
+		background-size: cover;
+	}
+	#wrapper>section:nth-of-type(5){
+		background: url(../img/bg/bg_05.png) center;
+		background-size: cover;
+	}
+	/*------------------------------------------------------------------------*/
+	/*반짝이는로고 애니매이션*/
+	#home #lnb .logo{
+		/*border:1px solid blue;*/
+		width: 69px;
+		height: 90px;
+		position: absolute;
+		left:3.9%;
+		top:23px;
+		background: url(../img/nav/lnb/logo_hover12.png);
+		animation: logo 1s steps(5) infinite;
+	}
+	@keyframes logo{
+		from{}
+		to{background-position: -345px;}
+	}
+	/*------------------------------------------------------------------------*/
+	/*lnb 카테고리*/
+	#home #lnb .stick li:nth-child(1){
+		background: url(../img/nav/lnb/text01.png);
+	}
+	#home #lnb .stick li:nth-child(2){
+		background: url(../img/nav/lnb/text02.png);
+	}
+	#home #lnb .stick li:nth-child(3){
+		background: url(../img/nav/lnb/text03.png);
+	}
+	#home #lnb .stick li:nth-child(4){
+		background: url(../img/nav/lnb/text04.png);
+	}
+	/*lnb 카테고리 호버시 빛나는 글씨*/
+	#home #lnb .stick li:nth-child(1):hover{
+		background: url(../img/nav/lnb/text_hover01.png);
+	}
+	#home #lnb .stick li:nth-child(2):hover{
+		background: url(../img/nav/lnb/text_hover02.png);
+	}
+	#home #lnb .stick li:nth-child(3):hover{
+		background: url(../img/nav/lnb/text_hover03.png);
+	}
+	#home #lnb .stick li:nth-child(4):hover{
+		background: url(../img/nav/lnb/text_hover04.png);
+	}
+	/*----------------------------------------------------------------------*/
+	/*움직이는 gnb*/
+	#gnb li:nth-child(1){
+		background: url(../img/nav/gnb/gnb01.png);
+	}
+	#gnb li:nth-child(2){
+		background: url(../img/nav/gnb/gnb02.png);
+	}
+	#gnb li:nth-child(3){
+		background: url(../img/nav/gnb/gnb03.png);
+	}
+	#gnb li:nth-child(4){
+		background: url(../img/nav/gnb/gnb04.png);
+	}
+	#gnb li:nth-child(5){
+		background: url(../img/nav/gnb/gnb05.png);
+	}
+	/*gnb 클릭 시 해당 메뉴 표시 active*/
+	#gnb li.active:nth-child(1){
+		background: url(../img/nav/gnb/gnb01_active.png);
+	}
+	#gnb li.active:nth-child(2){
+		background: url(../img/nav/gnb/gnb02_active.png);
+	}
+	#gnb li.active:nth-child(3){
+		background: url(../img/nav/gnb/gnb03_active.png);
+	}
+	#gnb li.active:nth-child(4){
+		background: url(../img/nav/gnb/gnb04_active.png);
+	}
+	#gnb li.active:nth-child(5){
+		background: url(../img/nav/gnb/gnb05_active.png);
+	}
+	/*------------------------------------------------------------------------*/
+	/*움직이는 gnb 호버시 애니매이션 효과-*/
+	#gnb li:nth-child(1):hover{
+		background: url(../img/nav/gnb/gnb01_hover.png);
+		animation: gnb01 2s steps(13) infinite;
+	}
+	@keyframes gnb01{
+		from{background-position: 0, 0}
+		to{background-position: -1444px, 0}
+	}
+	#gnb li:nth-child(2):hover{
+		background: url(../img/nav/gnb/gnb02_hover.png);
+		animation: gnb02 2s steps(13) infinite;
+	}
+	@keyframes gnb02{
+		from{background-position: 0, 0} 
+		to{background-position: -1444px,0}
+	}
+	#gnb li:nth-child(3):hover{
+		background: url(../img/nav/gnb/gnb03_hover.png);
+		animation: gnb03 2s steps(13) infinite;
+	}
+	@keyframes gnb03{
+		from{background-position: 0, 0}
+		to{background-position: -1444px,0}
+	}
+	#gnb li:nth-child(4):hover{
+		background: url(../img/nav/gnb/gnb04_hover.png);
+		animation: gnb04 2s steps(13) infinite;
+	}
+	@keyframes gnb04{
+		from{background-position: 0, 0}
+		to{background-position: -1444px,0}
+	}
+	#gnb li:nth-child(5):hover{;
+		background: url(../img/nav/gnb/gnb05_hover.png);
+		animation: gnb05 2s steps(13) infinite;
+	}
+	@keyframes gnb05{
+		from{background-position: 0, 0}
+		to{background-position: -1444px ,0}
+	}
+	/*------------------------------------------------------------------------*/
+	/*sns 버튼 이미지 */
+	#home #sns li{
+		width: 51px;
+		height: 51px;
+		position: absolute;
+	}
+	/*페이스북*/
+	#home #sns li:nth-child(1){
+		background: url(../img/bg/sns01.png);
+		right: 14%;
+		top:5px;
+	}
+	/*네이버카페*/
+	#home #sns li:nth-child(2){
+		background: url(../img/bg/sns02.png);
+		right: 10%;
+		top:5px;
+	}
+	/*인스타그램*/
+	#home #sns li:nth-child(3){
+		background: url(../img/bg/sns03.png);
+		right: 6%;
+		top:5px;
+	}
+	/*맥심플랜트*/
+	#home #sns li:nth-child(4){
+		background: url(../img/bg/sns04.png);
+		right: 2%;
+		top:5px;
+	}
+	/*------------------------------------------------------------------------*/
+	/*sns 버튼 호버시 회전하는 애니메이션*/
+	#home #sns li:nth-child(1):hover{
+		background: url(../img/bg/sns01.png);
+		right:14%;
+		top:5px;
+		animation: sns01 1s infinite;
+	}
+	@keyframes sns01{
+		0%{transform:rotateY(15deg);}
+		15%{transform:rotateY(45deg);}
+		30%{transform:rotateY(90deg);}
+		45%{transform:rotateY(130deg);}
+		60%{transform:rotateY(180deg);}
+		75%{transform:rotateY(240deg);}
+		90%{transform:rotateY(300deg);}
+		100%{transform:rotateY(360deg);}
+	}
+	#home #sns li:nth-child(2):hover{
+		background: url(../img/bg/sns02.png);
+		right:10%;
+		top:5px;
+		animation: sns02 1s infinite
+	}
+	@keyframes sns02{
+		0%{transform:rotateY(15deg);}
+		15%{transform:rotateY(45deg);}
+		30%{transform:rotateY(90deg);}
+		45%{transform:rotateY(130deg);}
+		60%{transform:rotateY(180deg);}
+		75%{transform:rotateY(240deg);}
+		90%{transform:rotateY(300deg);}
+		100%{transform:rotateY(360deg);}
+	}
+	#home #sns li:nth-child(3):hover{
+		background: url(../img/bg/sns03.png);
+		right:6%;
+		top:5px;
+		animation: sns03 1s infinite
+	}
+	@keyframes sns03{
+		0%{transform:rotateY(15deg);}
+		15%{transform:rotateY(45deg);}
+		30%{transform:rotateY(90deg);}
+		45%{transform:rotateY(130deg);}
+		60%{transform:rotateY(180deg);}
+		75%{transform:rotateY(240deg);}
+		90%{transform:rotateY(300deg);}
+		100%{transform:rotateY(360deg);}
+	}
+	#home #sns li:nth-child(4):hover{
+		background: url(../img/bg/sns04.png);
+		right:2%;
+		top:5px;
+		animation: sns04 1s infinite;
+	}
+	@keyframes sns04{
+		0%{transform:rotateY(15deg);}
+		15%{transform:rotateY(45deg);}
+		30%{transform:rotateY(90deg);}
+		45%{transform:rotateY(130deg);}
+		60%{transform:rotateY(180deg);}
+		75%{transform:rotateY(240deg);}
+		90%{transform:rotateY(300deg);}
+		100%{transform:rotateY(360deg);}
+	}
+	 /*home 컨텐츠--------------------------------------------------------------------*/
+	/*맥심건물*/
+	.coffee{
+		width: 449px;
+		height: 500px;
+		position: absolute;
+		background: url(../img/sub/home/home01.png);
+		left: 50%;
+		bottom:19%;
+		margin-left:-221.5px;
+	}
+	/*가판대*/
+	.light{
+		width: 111px;
+		height: 270px;
+		position: absolute;
+		 background: url(../img/sub/home/home02.png);
+		left:50%;
+		margin-left: 270px;
+		bottom:19%;
+	}
+	/*방향 유도 화살표*/
+	#home .scroll{ 
+		width: 111px;
+		height: 36px;
+		position: absolute;
+		background: url(../img/bg/bar.png);
+		bottom:100px;
+		right: 0;
+		animation:bar 1s infinite;
+	}
+	@keyframes bar{
+		0%{ }
+		50%{right:-30px}
+		100%{}
+	}
+	/*start글씨*/
+	#home .text{
+		width: 81px;
+		height: 26px;
+		position: absolute;
+		background: url(../img/bg/start.png);
+		right:30px;
+		bottom:70px;
+	}
+	/*메인화면의 이벤트버튼*/
+	#home .event_btn a{
+		width:171px;
+		height:171px;
+		text-indent: -9999;
+		display:block;
+	}
+	#home .event_btn{
+		/*border:1px solid red;*/
+		background: url(../img/sub/home/btn-thum.png);
+		position: absolute;
+		right:2%;
+		top:15%;
+		cursor: pointer;
+		animation: btn 1.5s infinite;
+	}
+	@keyframes btn{
+		0%{top:15%;}
+		50%{top:14%;}
+		100%{top:15%;}
+	}
+	/*유튜브 버튼*/
+	#home .youtube_btn{
+		/*border:1px solid blue;*/
+		width:171px;
+		height:171px;
+		background: url(../img/sub/home/btn-thum02.png);
+		position: absolute;
+		right:2%;
+		top:33%;
+		cursor: pointer;
+		animation: btn02 1.5s infinite;
+	}
+	@keyframes btn02{
+		0%{top:34%;}
+		50%{top:33%;}
+		100%{top:34%;}
+	}
+	#home iframe{
+		position:absolute;
+		width:640px;
+		height:360px;
+		left: 50%;
+		margin-left:-320px;
+		top:29%;
+		z-index: 9999;
+	}
+	#home .playboard{
+		width: 778px;
+		height: 479px;
+		position: relative;
+		background:url(../img/sub/home/playboard.png);
+		left: 50%;
+		margin-left:-389px;
+		top:215px;
+		z-index: 9999;
+	}
+	#home .ho_x_btn{
+		font-size: 2em;
+		color: white;
+		position:absolute;
+		right:5.5%;
+		top:25px;
+		cursor:pointer;
+	}
+	/*움직이는 꽃*/
+	#home .flower{
+		width: 42.615px;
+		height: 47px;
+		position: absolute;
+	}
+	#home .flower01{
+		background: url(../img/sub/home/flower01.png);
+		left: 30%;
+		bottom: 5%;
+		animation: flw1 4s steps(13) infinite ;
+		/*animation-direction: */
+	}
+	@keyframes flw1{
+		from{}
+		to{background-position: -554px}
+	}
+	#home .flower02{
+		background: url(../img/sub/home/flower02.png);
+		left: 25%;
+		bottom: 15%;
+		animation: flw2  4s steps(13) infinite ;
+	
+	}
+	@keyframes flw2{
+		from{}
+		to{background-position: -554px}
+	}
+	#home .flower03{
+		background: url(../img/sub/home/flower01.png);
+		left: 10%;
+		bottom: 10%;
+		animation: flw3 4s steps(13) infinite ;
+	
+	}
+	@keyframes flw3{
+		from{}
+		to{background-position: -554px}
+	}
+	#home .flower04{
+		background: url(../img/sub/home/flower02.png);
+		right: 35%;
+		bottom: 8%;
+		animation: flw4  4s steps(13) infinite ;
+	
+	}
+	@keyframes flw4{
+		from{}
+		to{background-position: -554px}
+	}
+	#home .flower05{
+		background: url(../img/sub/home/flower01.png);
+		right: 25%;
+		bottom: 15%;
+		animation: flw5  4s steps(13) infinite ;
+	
+	}
+	@keyframes flw5{
+		from{}
+		to{background-position: -554px}
+	}
+	#home .flower06{
+		background: url(../img/sub/home/flower02.png);
+		right: 10%;
+		bottom: 13%;
+		animation: flw6 4s steps(13) infinite ;
+	
+	}
+	@keyframes flw6{
+		from{}
+		to{background-position: -554px}
+	}
+
+	/*about us 컨텐츠--------------------------------------------------------------------*/
+	/*채도가 변하는 액자*/
+	/*액자1*/
+	#aboutus .frame01{
+		width: 350px;
+		height: 401px;
+		position: absolute;
+		background: url(../img/sub/about/thumnail01.png);
+		left: 18%;
+		bottom:150px;
+		animation: thum01 1s steps(2) infinite;
+	}
+	@keyframes thum01{
+		from{}
+		to{background-position:-700px}
+	}
+	/*액자2*/
+	#aboutus .frame02{
+		width: 350px;
+		height: 400px;
+		position: absolute;
+		left: 44%;
+		background: url(../img/sub/about/thumnail02.png);
+		top:150px;
+		animation:thum02 1s steps(2) infinite;
+	}
+	@keyframes thum02{
+		from{}
+		to{background-position: -700px}
+	}
+	/*액자3*/
+	#aboutus .frame03{
+		width: 350px;
+		height: 400px;
+		position: absolute;
+		background: url(../img/sub/about/thumnail03.png);
+		left: 70%;
+		bottom:150px;
+		animation: thum03 1s steps(2) infinite
+	}
+	@keyframes thum03{
+		from{}
+		to{background-position: -700px}
+	}
+	/*------------------------------------------------------------------------*/
+	/*액자 호버시 색감이 생기며 안에 그림이 움직이는 애니매이션*/
+	#aboutus .frame01:hover{
+		width: 350px;
+		height: 401px;
+		position: absolute;
+		background: url(../img/sub/about/ani01.png);
+		left: 18%;
+		bottom:150px;
+		cursor: pointer;
+		animation: socks 1s steps(4) infinite;
+	}
+	@keyframes socks{
+		from{background-position:0 0 }
+		to{background-position:-1400px 0 }
+	}
+	#aboutus .frame02:hover{
+		width: 350px;
+		height: 400px;
+		position: absolute;
+		background: url(../img/sub/about/ani02.png);
+		left: 44%;
+		top:150px;
+		cursor: pointer;
+		animation: girl 1s steps(4) infinite;
+	}
+	@keyframes girl{
+		from{background-position:0 0 }
+		to{background-position:-1400px 0 }
+	}
+	#aboutus .frame03:hover{
+		width: 350px;
+		height: 400px;
+		position: absolute;
+		background: url(../img/sub/about/ani03.png);
+		left: 70%;
+		bottom:150px;
+		cursor: pointer;
+		animation: shine2 1s steps(2) infinite;
+	}
+	@keyframes shine2{
+		from{background-position:0 0 }
+		to{background-position:-700px 0 }
+	}
+	/*------------------------------------------------------------------------*/
+	/*클릭을 유도하는 남자캐릭터*/
+	#aboutus .man{
+		width: 220px;
+		height: 350px;
+		position: absolute;
+		background: url(../img/sub/about/man.png);
+		left: 50%;
+		margin-left: -110px;
+		bottom:3px;
+		animation: man 1s steps(7) infinite;
+	}
+	@keyframes man{
+		from{}
+		to{background-position: -1540px}
+	}
+	/*말주머니*/
+	#aboutus .talk{
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		background: url(../img/sub/about/talk.png);
+		bottom: 140px;
+		left: 50%;
+		margin-left: 100px
+	}
+	/*------------------------------------------------------------------------*/
+	/*액자 누르면 나타나는 모달창*/
+	#aboutus .ab_modal_bg{
+		width: 450px;
+		height: 594px;
+		position: relative;
+		background: url(../img/sub/about/ab_modal_bg.png);
+		left: 50%;
+		margin-left: -225px;
+		top:20%;
+		z-index: 9999
+	}
+	/*모달 컨텐츠  레이아웃*/
+	#aboutus .ab_modal{
+		width:400px;
+		height: 544px;
+		position: absolute;
+		left: 50%;
+		margin-left:-200px;
+		top:25px;
+		z-index: 99999
+	}
+	/*modal창 컨텐츠*/
+	#aboutus .click1{
+		background: url(../img/sub/about/click1.png);	
+	}
+	#aboutus .click2{
+		background: url(../img/sub/about/click2.png);	
+	}
+	#aboutus .click3{
+		background: url(../img/sub/about/click3.png);
+	}
+	#aboutus .click3 .ab_btn{
+		width:188px;
+		height:43px;
+		position: absolute;
+		background: url(../img/sub/about/ab-btn_ani.png);
+		left:26%;
+		bottom:100px;
+		cursor:pointer;
+		animation:ab_btn 1s steps(2) infinite;
+	}
+	@keyframes ab_btn{
+		from{}
+		to{background-position: -376px}
+	}	
+
+	/*클로즈버튼*/
+	#aboutus .ab_modal_bg .ab_x_btn01{
+		font-size: 1.5em;
+		position: absolute;
+		color: white;
+		right:5px;
+		top:5px;
+		cursor: pointer;
+	}
+	#aboutus .ab_modalpage{
+		border-radius: 10px;
+		width:450px;
+		height:700px;
+		background: url(../img/sub/about/frame03_modal.png);
+		position: absolute;
+		left: 40%;
+		bottom:100px;
+		z-index: 9999
+	}
+	#aboutus .ab_modalpage .ab_x_btn02{
+		font-size: 1.5em;
+		position: absolute;
+		color: white;
+		right:10px;
+		top:5px;
+		cursor: pointer;
+	}
+	/*-product 컨텐츠--------------------------------------------------------------------*/
+	/*나무메뉴판*/
+	#product .wood{
+		/*border:1px solid red;*/
+		width:500px;
+		height:244px;
+		position: absolute;
+		left: 50%;
+		margin-left: -250px;
+		top:20px;
+		box-sizing: border-box;
+	}
+	#product .wood div{
+		/*border:1px solid blue;*/
+		width: 131px;
+		height: 240px;
+		position: absolute;
+	}
+	#product .wood div:nth-child(1){
+		background: url(../img/sub/product/wood1.png);
+		animation: wood1 1s steps(2) infinite
+	}
+	@keyframes wood1{
+		from{}
+		to{background-position: -262px}
+	}	
+	#product .wood div:nth-child(2){
+		background: url(../img/sub/product/wood2.png) ;
+		left: 37%;
+		animation: wood2 1s steps(2) infinite
+	}
+	@keyframes wood2{
+		from{}
+		to{background-position: -262px}
+	}	
+	#product .wood div:nth-child(3){
+		background: url(../img/sub/product/wood3.png) ;
+		left: 73.5%;
+		animation: wood3 1s steps(2) infinite
+	}
+	@keyframes wood3{
+		from{}
+		to{background-position: -262px}
+		}
+	/*------------------------------------------------------------------------*/	
+	/*나무 메뉴판  호버시 사이즈&색상변경*/
+	#product .wood div:hover{
+		width:131px;
+		height:244px;
+		position: absolute;
+	}
+	#product .wood div:nth-child(1):hover{;
+		background: url(../img/sub/product/wood01.png);
+		
+	}
+	#product .wood div:nth-child(2):hover{
+		background: url(../img/sub/product/wood02.png) ;
+		left: 37%;
+		
+	}
+	#product .wood div:nth-child(3):hover{
+		background: url(../img/sub/product/wood03.png) ;
+		left:73.5%;
+	
+	}
+	/*천장에 위에 식물*/
+	#product .leaf{
+		width:1501px;
+		height:349px;
+		position: absolute;
+		background: url(../img/sub/product/leaf.png);
+		left:50%;
+		margin-left: -730px;	
+	}
+	/*계산대*/
+	#product .counter{
+		width: 831px;
+		height: 501px;
+		position: absolute;
+		background: url(../img/sub/product/counter.png);
+		left: 50%;
+		margin-left: -415.5px;
+		bottom:0px;
+	}
+	/*클릭을 유도하는 여자캐릭터*/
+	#product .yellowgirl{
+		width: 225px;
+		height: 414px;
+		background: url(../img/sub/product/yellow.png);
+		position: absolute;
+		left: 50%;
+		margin-left: -350px;
+		bottom:150px;
+		animation: girl2 1s steps(6) infinite
+	}
+	@keyframes girl2{
+		from{}
+		to{background-position:-1350px}
+	}
+	/*말주머니*/
+	#product .talk2{
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		background: url(../img/sub/product/talk2.png);
+		left: 50%;
+		margin-left: -600px;
+		bottom: 300px
+	}
+	/*wood 클릭 시 서브컨텐츠 모달창*/
+	#product .pr_modal_bg{
+		/*border:1px solid red;*/
+		width: 700px;
+		height: 580px;
+		position:relative;
+		background: url(../img/sub/product/pr_modal_bg.png);
+		left: 50%;
+		margin-left: -350px;
+		top: 17%;
+		z-index:9999;
+		overflow: hidden;
+
+	}
+	#product .pr_modal_bg ul{
+		/*border: 1px solid red;*/
+		width: 700px;
+		height: 580px;
+		cursor: pointer;
+		position: absolute;
+		top:0;
+		left:0;
+		box-sizing: border-box;
+	}
+	/*메뉴판 중 "연하게" 클릭시*/
+	#product .pr_modal_bg li {
+		/*border:1px solid blue;*/
+		width: 700px;
+		height: 580px;
+		position: absolute;
+		left: 100%;
+	}
+	#product .pr_modal_bg .wood-1 li:nth-child(1){
+		background: url(../img/sub/product/simple.png);
+		left:0;
+	}
+	#product .pr_modal_bg .wood-1 li:nth-child(2){
+		background: url(../img/sub/product/mocalight.png);
+	}
+	/*메뉴판 중 "보통" 클릭시*/
+	#product .pr_modal_bg .wood-2 li:nth-child(1){
+		background: url(../img/sub/product/moca.png);
+		left:0;
+	}
+	#product .pr_modal_bg .wood-2 li:nth-child(2){
+		background: url(../img/sub/product/white.png);
+	}
+	/*메뉴판 중 "진하게" 클릭시*/
+	#product .pr_modal_bg .wood-3 li:nth-child(1){
+		background: url(../img/sub/product/arabica.png);
+		left:0;
+	}
+	#product .pr_modal_bg .wood-3 li:nth-child(2){
+		background: url(../img/sub/product/original.png);
+	}
+	/*클로즈버튼*/
+	#product .pr_modal_bg .fa-times-circle{
+		font-size: 2em;
+		position: absolute;
+		color:#B69879; 
+		right:15px;
+		top:15px;
+		z-index:99999;
+	}
+	#product .pr_modal_bg .pr_carousel .square{
+		/*border:1px solid blue;*/
+		width: 330px;
+		height:20px;
+		position: absolute;
+		left:45%;
+		bottom:120px;
+		box-sizing: border-box;
+	}
+	#product .pr_modal_bg .pr_carousel .square div{
+		/*border:1px solid red;*/
+		width:18px;
+		height:18px;
+		border-radius: 50%;
+		box-shadow: 2px 2px 2px #B9B8B8;
+		float: left;
+		margin-right:35px;
+		background-color:#D2C0AA;
+		cursor: pointer;
+		display: inline-block;
+	}
+	#product .pr_modal_bg .pr_carousel .square div.active{
+		background-color:#B69879; 
+	}
+	/*event 컨텐츠--------------------------------------------------------------------*/
+	/*노란테두리 모니터*/
+	#event .screen{
+		width: 901px;
+		height: 701px;
+		position: absolute;
+		background: url(../img/sub/event/screen.png);
+		left:15%;
+	}
+	/*모니터 안에 서브컨텐츠 레이아웃*/
+	#event .screen .s-border{
+	/*	border:1px solid red;*/
+		width: 751px;
+		height: 501px;
+		position: relative;
+		left:50%;
+		margin-left:-377px;
+		top:13.1%;
+		overflow:hidden;
+	}
+	/*서브컨텐츠 이벤트 내용*/
+	#event .screen .s-border .banner {
+		/*border:1px solid blue;*/
+		width: 751px;
+		height: 501px;
+		position: absolute;
+		left:100%;
+	}
+	#event .screen .s-border .banner01{
+		background: url(../img/sub/event/event01.png);
+		left:0%;
+	}
+	#event .screen .s-border .banner02{
+		background: url(../img/sub/event/event02.png);
+	}
+	#event .screen .s-border .banner03{
+		background: url(../img/sub/event/event03.png);
+	}
+	/*서브 컨텐츠 이벤트 안에 버튼*/
+	#event .screen .s-border .banner .ev_btn{
+		position:absolute;
+		cursor: pointer; 
+	}
+	#event .screen .s-border .banner .ev_btn01{
+		width: 171px;
+		height: 57px;
+		background: url(../img/sub/event/event-btn1.png);
+		bottom: 40px;
+		left: 10%;
+	}
+	#event .screen .s-border .banner .ev_btn02{
+		width: 171px;
+		height: 57px;
+		background: url(../img/sub/event/event-btn2.png);
+		bottom: 40px;
+		left: 38%;
+	}
+	#event .screen .s-border .banner .ev_btn03{
+		width: 384px;
+		height: 86px;
+		background: url(../img/sub/event/event-btn3.png);
+		left: 44%;
+		top: 40px;
+	}
+	/*이벤트 버튼 클릭 시 상세페이지*/
+	#event div.scrollpage{
+		/*border:1px solid red;*/
+		width:619px;
+		height:700px;
+		position:relative;
+		background:url(../img/sub/event/modalBg01.png);
+		background-position: contain;
+		left:45%;
+		top:30px;
+		left:25%;
+		overflow: hidden;
+		border-radius:10px;
+		z-index: 9999;
+	}
+	#event .scrollpage_box ul{
+		/*border:1px solid gold;*/
+		width:618px;
+		height:630px;
+		position: absolute;
+		box-sizing: border-box;;
+		overflow-y:scroll;
+		scroll-behavior: smooth;
+		top:10%;
+	}
+	#event .scrollpage_box li{
+		/*border:1px solid red;*/
+		width: 601px;
+		height:1500px;
+		position: absolute;
+	}
+	#event .scrollpage .scroll01{
+		background:url(../img/sub/event/ev-scroll01.png);
+	}
+	#event .scrollpage .scroll02{
+		background:url(../img/sub/event/ev-scroll02.png);
+	}
+	#event .scrollpage .scroll03{
+		background:url(../img/sub/event/ev-scroll03.png);
+	}
+	/*상세 페이지 안에 클로즈버튼*/
+	#event .scrollpage .fa-times{
+		color:white;
+		font-size: 2em;
+		position: absolute;
+		right:10px;
+		top:10px;
+	}
+	/*스크린 안에서 넘어가는 carousel*/
+	#event .screen .event_carousel{
+		/*border: 1px solid black;*/
+		position: absolute;
+		left: 41%;
+		bottom: 8px;
+	}
+	#event .screen .event_carousel li{
+		width: 15px;
+		height: 15px;
+		background-color: white;
+		box-shadow: 2px 2px 2px gray;
+		border-radius: 50%;
+		margin-left:20px;
+		float: left;
+		cursor: pointer;
+	}
+	#event .screen .event_carousel li.active{
+		background-color:#FAE319;
+	}
+	/*노란 테이블*/
+	#event .mc{
+		width: 461px;
+		height: 301px;
+		position: absolute;
+		background: url(../img/sub/event/mc.png);
+		left:50%;
+		margin-left: 498px;
+		bottom:0
+	}
+	/*라디오 여자 dj 캐릭터*/
+	#event .dj{
+		width: 280px;
+		height: 350px;
+		position: absolute;
+		background: url(../img/sub/event/dj.png);
+		left: 50%;
+		margin-left: 500px;
+		bottom: 190px;
+		animation: dj 1s steps(8) infinite
+	}
+	@keyframes dj{
+		0%{}
+		100%{background-position: -2240px}
+	}
+	/*recipe 컨텐츠-------------------------------------------------------------------*/
+	/*클릭을 유도하는 책 애니메이션*/
+	#recipe .book{
+		width: 66px;
+		height: 151px;
+		position: absolute;
+		cursor: pointer;
+	}
+	/*초록색책*/
+	#recipe .book01{
+		background: url(../img/sub/recipe/book01.png);
+		left: 48%;
+		top:20%;
+		animation: book01 2s infinite;
+	}
+	@keyframes book01{
+		0%{transform: rotate(-5deg);}
+		50%{transform: rotate(5deg);}
+		100%{transform: rotate(-5deg);}
+	}
+	/*빨간색*/
+	#recipe .book02{
+		background: url(../img/sub/recipe/book02.png);
+		left: 28.5%;
+		top:37.5%;
+		animation: book02 2s infinite linear;
+	}
+	@keyframes book02{
+		0%{transform: rotate(-5deg);}
+		50%{transform: rotate(5deg);}
+		100%{transform: rotate(-5deg);}
+	}
+	/*파란색*/
+	#recipe .book03{
+		background: url(../img/sub/recipe/book03.png);
+		left: 75%;
+		top:37.5%;
+		animation: book03 2s infinite linear;
+	}
+	@keyframes book03{
+		0%{transform: rotate(-5deg);}
+		50%{transform: rotate(5deg);}
+		100%{transform: rotate(-5deg);}
+	}
+	/*노란색*/
+	#recipe .book04{
+		background: url(../img/sub/recipe/book04.png);
+		left: 70%;
+		top:23.5%;
+		transform: rotateZ(90deg);
+		animation: book04 2s infinite linear;
+	}
+	@keyframes book04{
+		0%{transform: rotate(85deg);}
+		50%{transform: rotate(100deg);}
+		100%{transform: rotate(85deg);}
+	}
+	/*책 클릭을 안내하는 여자캐릭터*/
+	#recipe .guide{
+		width: 180px;
+		height: 290px;
+		position: absolute;
+		background: url(../img/sub/recipe/guide.png);
+		left:12%;
+		bottom:0;
+		animation: guide 1s steps(6) infinite ;
+	}
+	@keyframes guide{
+		0%{}
+		100%{background-position:-1080px}
+	}
+	/*검은 바탕 말주머니*/
+	#recipe .memo{
+		/*border:1px solid red;*/
+		width: 950px;
+		height: 160px;
+		position: absolute;
+		background: url(../img/sub/recipe/memo.png) no-repeat;
+		background-size: contain;
+		left: 50%;
+		margin-left: -490px;
+		bottom: 3%;
+		box-sizing: border-box;
+	}
+	/*안내말*/
+	#recipe .memo ul{
+		/*border:1px solid gold;*/
+		width: 631px;
+		height: 81px;
+		position: absolute;
+		left: 16%;
+		top:30px;
+		overflow: hidden;
+	}
+	#recipe .memo li{
+		/*border:1px solid red;*/
+		width: 631px;
+		height: 81px;
+		position: absolute;
+		left: 100%
+	}
+	#recipe .memo li:nth-child(1){
+		background: url(../img/sub/recipe/talk003.png);
+		left:0
+	}
+	#recipe .memo li:nth-child(2){
+		background: url(../img/sub/recipe/talk004.png);
+	}
+	#recipe .memo div{
+		/*border:1px solid white;*/
+		width: 950px;
+		height: 160px;
+		position: absolute;
+		left: 50%;
+		margin-left: -490px;
+		bottom: 3%;
+	}
+	#recipe .memo .fa{
+		font-size: 3em;
+		color: white;
+		position: absolute;
+		top:30%;
+	}
+	/*오른쪽*/
+	#recipe .memo .fa-angle-right{
+		right:10%;
+		animation: cursor1 1s infinite;
+	}
+	@keyframes cursor1{
+		0%{opacity:100;}
+		50%{opacity:0;}
+		100%{opacity:100;}
+	}
+	#recipe .memo .fa-angle-left{
+		left:8%;
+		animation: cursor2 1s infinite;
+		z-index: 999;
+	}
+	@keyframes cursor2{
+		0%{opacity:100;}
+		50%{opacity:0;}
+		100%{opacity:100;}
+	}
+	/*big_bk+mark 전체레이아웃*/
+	#recipe #book_border{
+		/*border:1px solid white;*/
+		width: 1010px;
+		height:680px;
+		position :absolute;
+		box-sizing: border-box;
+		left:50%;
+		top:5%;
+		z-index:9999;
+		margin-left:-505px;
+	}
+	/*움직이는 책을 클릭하면 나오는 레시피북*/
+	#recipe #book_border .big_bk{
+		/*border:1px solid blue;*/
+		width: 950px;		
+		height: 650px;
+		position:absolute;
+		background: url(../img/sub/recipe/book.png) no-repeat;
+		background-size: contain;
+		left:50%;
+		margin-left: -500px;
+		top:15%;
+		z-index:9999;
+	}
+	/*책 안에 레시피 레이아웃*/
+	#recipe #book_border .big_bk ul{
+		/*border:1px solid gold;*/
+		width: 900px;
+		height: 500px;
+		position: absolute;
+		left:3%;
+		top:8%;
+		overflow: hidden;
+	}
+	#recipe #book_border .big_bk li{
+		/*border:1px solid red;*/
+		width: 900px;
+		height:500px;
+		position: absolute;
+		float: left;
+		left:100%;
+		box-sizing: border-box;
+	}
+	/*달고나 레시피 이미지*/
+	#recipe .big_bk #dalgona li:nth-child(1){
+		background: url(../img/sub/recipe/dalgona01.png);
+		left:0%;
+	}
+	#recipe .big_bk #dalgona li:nth-child(2){
+		background: url(../img/sub/recipe/dalgona02.png);
+	}
+	#recipe .big_bk #dalgona li:nth-child(3){
+		background: url(../img/sub/recipe/dalgona03.png);
+	}
+	#recipe .big_bk #dalgona li:nth-child(4){
+		background: url(../img/sub/recipe/dalgona04.png);
+	}
+	/*소이라떼 레시피 이미지*/
+	#recipe .big_bk #soi li:nth-child(1){
+		background: url(../img/sub/recipe/amond01.png);
+		left: 0%
+	}
+	#recipe .big_bk #soi li:nth-child(2){
+		background: url(../img/sub/recipe/amond02.png);
+	}
+	#recipe .big_bk #soi li:nth-child(3){
+		background: url(../img/sub/recipe/amond03.png);
+	}
+	#recipe .big_bk #soi li:nth-child(4){
+		background: url(../img/sub/recipe/amond04.png);
+	}
+	/*아이스라떼 레시피 이미지*/
+	#recipe .big_bk #ice li:nth-child(1){
+		background: url(../img/sub/recipe/ice01.png);
+		left: 0%
+	}
+	#recipe .big_bk #ice li:nth-child(2){
+		background: url(../img/sub/recipe/ice02.png);
+	}
+	#recipe .big_bk #ice li:nth-child(3){
+		background: url(../img/sub/recipe/ice03.png);
+	}
+	#recipe .big_bk #ice li:nth-child(4){
+		background: url(../img/sub/recipe/ice04.png);
+	}
+	/*녹차라떼 레시피 이미지*/
+	#recipe .big_bk #greentea li:nth-child(1){
+		background: url(../img/sub/recipe/grntea01.png);
+		left: 0%
+	}
+	#recipe .big_bk #greentea li:nth-child(2){
+		background: url(../img/sub/recipe/grntea02.png);
+	}
+	#recipe .big_bk #greentea li:nth-child(3){
+		background: url(../img/sub/recipe/grntea03.png);
+	}
+	#recipe .big_bk #greentea li:nth-child(4){
+		background: url(../img/sub/recipe/grntea04.png);
+	}
+	/*next버튼*/
+	#recipe .big_bk .fa-chevron-circle-right{
+		font-size: 40px;
+		color: #605F5F;
+		position: absolute;
+		right:4%;
+		top:47%;
+	}
+	/*prev 버튼*/
+	#recipe .big_bk .fa-chevron-circle-left{
+		font-size: 40px;
+		color: #605F5F;
+		position: absolute;
+		left:4%;
+		top:47%;
+	}
+	/*close버튼*/
+	#recipe .big_bk .fa-times{
+		font-size: 30px;
+		color: #605F5F;
+		position: absolute;
+		top:6%;
+		right:3%;
+	}
+	/*사이드 책갈피*/
+	#recipe .mark li{
+		/*/*border: 1px solid red;*/
+		width: 61px;
+		height: 136px;
+		position: relative;
+		top:140px;
+		left: 50%;
+		margin-bottom: 1px;
+		margin-left: 424px;
+		border-radius: 0 10px 10px 0;
+		cursor: pointer;
+		z-index:9999;
+	}
+	#recipe #book_border .mark li a{
+		width: 61px;
+		height: 136px;
+		border-radius: 0 10px 10px 0;
+	}
+	#recipe .mark li:nth-child(1){
+		background:url(../img/sub/recipe/mark01.png);
+		background-color:#E4E2E2;
+	}
+	#recipe .mark li:nth-child(2){
+		background:url(../img/sub/recipe/mark02.png);
+		background-color:#E4E2E2;
+	}
+	#recipe .mark li:nth-child(3){
+		background:url(../img/sub/recipe/mark03.png);
+		background-color:#E4E2E2;
+	}
+	#recipe .mark li:nth-child(4){
+		background:url(../img/sub/recipe/mark04.png);
+		background-color:#E4E2E2;
+	}
+	#recipe .mark li.active:nth-child(1){
+		background-color:#F4B867;
+	}
+	#recipe .mark li.active:nth-child(2){
+		background-color:#FFB383;
+	}
+	#recipe .mark li.active:nth-child(3){
+		background-color:#F2DDC7;
+	}
+	#recipe .mark li.active:nth-child(4){
+		background-color:#B8D3BE;
+	}
+	#recipe .big_bk .re_carousel{
+		/*border:1px solid white;*/
+		position:absolute;
+		right: 15%;
+		bottom:20%;
+	}
+	#recipe .big_bk .re_carousel div{
+		/*border:1px solid white;*/
+		width: 16px;
+		height: 16px;
+		background-color: #605F5F;
+		border-radius: 50%;
+		float: left;
+		margin-right: 30px;
+	}
+	#recipe .big_bk .re_carousel div.active {
+		background-color:#9F9999;
+	}
